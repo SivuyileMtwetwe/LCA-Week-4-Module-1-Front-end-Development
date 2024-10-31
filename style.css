@@ -1,0 +1,29 @@
+/* nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    border: 1px solid red;
+    text-decoration: none;
+
+  }
+
+nav a{
+    display:  flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+li{
+    
+} */
+
+/* Not my Style  */
+
+nav {
+    position: fixed;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    justify-content: space-evenly;
+    
+}
