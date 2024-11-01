@@ -1,69 +1,24 @@
-/* Reset some default styling */
-body, h1, h2, p, nav, a, article {
-    margin: 0;
-    padding: 0;
+input{
+    width:100%;
+    padding: 12px;
+    border:1px solid #ddd;
+    border-radius: 4px;
 }
 
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
+label{
+    display: block;
+    margin-bottom: 8px;
 }
 
-/* Navigation Bar Styling */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
+input[type="submit"]{
+    background-color: #2196F3;
     color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-evenly;
+    padding: 12px 24px;
+
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Blog Main Heading */
-h1 {
-    color: #2c3e50;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 80px; /* Offset for fixed nav */
-}
-
-/* Blog Post Styling */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 20px;
-}
-
-article {
-    margin: 20px 0;
-}
-
-h2 {
-    color: #2c3e50;
-    font-size: 20px;
-}
-
-p {
-    color: #333;
-}
-
-/* Links Styling */
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+input[type="submit"]:hover{
+background-color: limegreen;
+box-shadow: 6px 6px 10px #0e0303,
+-6px -6px 10px #fcfbfb00
 }
