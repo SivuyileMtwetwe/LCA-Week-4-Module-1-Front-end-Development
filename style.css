@@ -1,29 +1,69 @@
-/* nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-    border: 1px solid red;
-    text-decoration: none;
-
-  }
-
-nav a{
-    display:  flex;
-    justify-content: space-evenly;
-    text-decoration: none;
+/* Reset some default styling */
+body, h1, h2, p, nav, a, article {
+    margin: 0;
+    padding: 0;
 }
 
-li{
-    
-} */
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+}
 
-/* Not my Style  */
-
+/* Navigation Bar Styling */
 nav {
     position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #333;
     color: white;
     padding: 15px;
-    justify-content: space-evenly;
-    
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Main Heading */
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 80px; /* Offset for fixed nav */
+}
+
+/* Blog Post Styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+article {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+p {
+    color: #333;
+}
+
+/* Links Styling */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
