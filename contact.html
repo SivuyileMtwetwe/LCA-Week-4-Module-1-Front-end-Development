@@ -4,55 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 6</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> <!-- Link to external CSS file -->
   </head>
   <body>
-    <header></header>
+    <!-- Header section with a heading and introductory paragraph -->
+    <header>
+        <h1>Contact Us</h1> <!-- Main heading -->
+        <p>Get in touch with us using the form below</p> <!-- Short description -->
+    </header>
 
     <main>
+      <!-- Contact form section for user inputs -->
       <section>
-        <form action="https://formspree.io/f/mjkvyyyj" method="post">
-          <label
-            >Enter your Name:
-            <input type="text" name="fullname" placeholder="John Doe"
-          /></label>
-          <label
-            >Enter your Email:
-            <input type="email" name="email" placeholder="johndoe@email.com"
-          /></label>
-          <label
-            >Enter your Phone Number:
-            <input type="number" name="phoneNumber" placeholder="081 234 5748"
-          /></label>
-          <label
-            >Select subject:
+        <form action="https://formspree.io/f/mjkvyyyj" method="post"> <!-- Form submits data to Formspree for processing -->
+          
+          <!-- Label and input for user's full name -->
+          <label>
+            Enter your Name:
+            <input type="text" name="fullname" placeholder="John Doe" />
+          </label>
+
+          <!-- Label and input for user's email address -->
+          <label>
+            Enter your Email:
+            <input type="email" name="email" placeholder="johndoe@email.com" />
+          </label>
+
+          <!-- Label and input for user's phone number -->
+          <label>
+            Enter your Phone Number:
+            <input type="number" name="phoneNumber" placeholder="081 234 5748" />
+          </label>
+
+          <!-- Label and dropdown for selecting a subject -->
+          <label>
+            Select subject:<br>
             <select name="subject">
               <option value="english">English</option>
               <option value="isixhosa">IsiXhosa</option>
               <option value="mathematics">Mathematics</option>
               <option value="geography">Geography</option>
-            </select></label
-          >
+            </select>
+          </label>
 
-          <label
-            >Enter your message:
+          <!-- Label and textarea for user's message -->
+          <label>
+            Enter your message:<br>
             <textarea name="message" placeholder="Message..."></textarea>
           </label>
 
+          <!-- Submit button for form submission -->
           <input type="submit" />
         </form>
       </section>
 
+      <!-- Section containing a table for schedule information -->
       <section>
         <table>
-            <thead>
+            <thead> <!-- Table header defining column titles -->
                 <tr>
                     <th>Day</th>
                     <th>Morning</th>
                     <th>Afternoon</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody> <!-- Table body with rows of schedule data -->
                 <tr>
                     <td>Monday</td>
                     <td>9:00 AM - 12:00 PM</td>

@@ -1,24 +1,78 @@
-input{
-    width:100%;
-    padding: 12px;
-    border:1px solid #ddd;
-    border-radius: 4px;
+/* Style for all input fields */
+input {
+    width: 100%;               /* Make input fields full width */
+    padding: 12px;              /* Add padding for better spacing */
+    border: 1px solid #ddd;     /* Light gray border */
+    border-radius: 4px;         /* Rounded corners for a softer look */
 }
 
-label{
-    display: block;
-    margin-bottom: 8px;
+/* Style for label elements */
+label {
+    display: block;             /* Block display for labels to stack vertically */
+    margin-bottom: 8px;         /* Add space below labels */
 }
 
-input[type="submit"]{
-    background-color: #2196F3;
-    color: white;
-    padding: 12px 24px;
-
+/* Style for submit button */
+input[type="submit"] {
+    background-color: #2196F3;  /* Blue background for the submit button */
+    color: white;               /* White text color */
+    padding: 12px 24px;         /* Padding for larger clickable area */
 }
 
-input[type="submit"]:hover{
-background-color: limegreen;
-box-shadow: 6px 6px 10px #0e0303,
--6px -6px 10px #fcfbfb00
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: limegreen;    /* Change background color on hover */
+    box-shadow: 6px 6px 10px #0e0303, -6px -6px 10px #fcfbfb00; /* Add shadow effect on hover */
+}
+
+/* Container for responsive tables */
+.table-container {
+    overflow-x: auto;           /* Enable horizontal scrolling for wide tables */
+}
+
+/* General table styling */
+table {
+    width: 100%;                /* Table takes full width of its container */
+    border-collapse: collapse;  /* Remove gaps between table borders */
+    margin-top: 20px;           /* Add space above the table */
+}
+
+/* Styling for table headers and cells */
+th, td {
+    padding: 12px;              /* Add padding to table cells */
+    text-align: left;           /* Align text to the left */
+    border: 1px solid #ddd;     /* Light gray border around each cell */
+}
+
+/* Styling specifically for table headers */
+th {
+    background-color: #2196F3;  /* Blue background for header cells */
+    color: white;               /* White text for headers */
+}
+
+/* Alternating row colors for table readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Light gray background for even rows */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #f5f5f5;  /* Light gray background on row hover */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;          /* Add padding to the container */
+    }
+    
+    input,
+    select,
+    textarea {
+        padding: 10px;          /* Adjust padding for form elements */
+    }
+    
+    th, td {
+        padding: 8px;           /* Reduce padding in table cells for compactness */
+    }
 }
