@@ -13,12 +13,15 @@ nav {
     color: white;
     padding: 15px;
     text-align: center;
+    display: flex;
+
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    float: left;
 }
 
 nav a:hover {

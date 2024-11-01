@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-          <ul class="nav-links">
-            <!-- Navigation links for the blog -->
-            <a href="/blog.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="/about.html"> <i class="fa-solid fa-info"></i> About</a>
-            <a href="/articles.html"><i class="fa-solid fa-newspaper"></i> Articles</a>
-            <a href="/contact.html"><i class="fa-solid fa-address-book"></i> Contact links</a>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <img width="100px" style="border-radius: 50%;"
+          src="/asserts/Picsart_24-11-01_15-11-16-130.jpg"
+          alt="logo image"
+        />
+        <ul class="nav-links">
+          <!-- Navigation links for the blog -->
+          <a href="/blog.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="/about.html"> <i class="fa-solid fa-info"></i> About</a>
+          <a href="/articles.html"
+            ><i class="fa-solid fa-newspaper"></i> Articles</a
+          >
+          <a href="/contact.html"
+            ><i class="fa-solid fa-address-book"></i> Contact links</a
+          >
+        </ul>
+      </nav>
+    </header>
+    <br />
 
     <main>
-        <p>Feel free to reach out via the form below:</p>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
-            <input type="submit" value="Submit">
-        </form>
+      <h1>Feel free to reach out via the form below:</h1>
+      <form action="https://formspree.io/f/mnnqpzql" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
     </main>
-    <script src="https://kit.fontawesome.com/e086fa8a79.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/e086fa8a79.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
