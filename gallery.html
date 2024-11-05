@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="filter-gallery-container">
+      <!-- Filtering radio inputs and labels -->
+      <input type="radio" name="filter" id="filter-all" checked />
+      <label for="filter-all" class="filter-btn">All</label>
+
+      <input type="radio" name="filter" id="filter-landscapes" />
+      <label for="filter-landscapes" class="filter-btn">Landscapes</label>
+
+      <input type="radio" name="filter" id="filter-portraits" />
+      <label for="filter-portraits" class="filter-btn">Portraits</label>
+
+      <input type="radio" name="filter" id="filter-architecture" />
+      <label for="filter-architecture" class="filter-btn">Architecture</label>
+
+      <!-- Gallery section with items to filter -->
+      <section class="gallery">
+        <div class="gallery-item" data-category="landscapes">
+          <img
+            src="/assets/landscapes/Cape Town -  Landscape.jpg"
+            alt="Landscape 1"
+          />
+          <h2>Cape Town</h2>
+          <div class="overlay">
+            <p>
+              Beautiful arial view of Cape Town showing Table Mountain and the
+              DHL Stadium.
+            </p>
+          </div>
+          <div class="category-tag">Landscapes</div>
+        </div>
+
+        <div class="gallery-item" data-category="portraits">
+          <img
+            src="/assets/portraits/famous-portrait-paintings-49-634425c4029da__700 - portraits.jpg"
+            alt="Portrait 1"
+          />
+          <h2>Ludwig van Beethoven</h2>
+          <div class="overlay">
+            <p>
+              He was a German composer and pianist. He is one of the most
+              revered figures in the history of Western music.
+            </p>
+          </div>
+          <div class="category-tag">Portraits</div>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+          <img
+            src="/assets/architecture/mirror like - Architecture.jpg"
+            alt="Architecture 1"
+          /><h2> Barloworld and Caterpillar head office</h2>
+          <div class="overlay">
+            
+            <p>The development consists of Barloworld's head office as well as a Caterpillar showroom and a new training campus</p>
+          </div>
+          <div class="category-tag">Architecture</div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+          <img
+            src="/assets/landscapes/giraffe - landscape.webp"
+            alt="Landscape 1"
+          /><h2>Savannah Sunset Serengeti</h2>
+          <div class="overlay">
+            
+            <p>The image showcases a beautiful, golden-hued savanna landscape at sunset, featuring two giraffes standing close together. Their necks are gently crossed, creating a serene and harmonious composition. The warm colors of the setting sun cast a gentle glow over the tall, dry grass and the distant trees. A large tree and rocky formation are visible to the left, adding depth and a sense of wilderness to the scene, while the vast open plains stretch towards the horizon. The overall atmosphere is peaceful, capturing the essence of an African safari setting.</p>
+          </div>
+          <div class="category-tag">Landscapes</div>
+        </div>
+
+        <div class="gallery-item" data-category="portraits">
+          <img
+            src="/assets/portraits/Black Coffee - potraits.jpg"
+            alt="Portrait 1"
+          />
+          <h2>Nkosinathi Maphumulo (Black Coffee)</h2>
+          <div class="overlay">
+            <p>
+              A picture of Nkosinathi Maphumulo populary known as Black Coffee
+              dressed by Maxhosa.
+            </p>
+          </div>
+          <div class="category-tag">Portraits</div>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+          <img
+            src="/assets/architecture/ndebele - Architecture.jpg"
+            alt="Architecture 1"
+          /><h2>Vibrant Ndebele House Facade</h2>
+          <div class="overlay">
+            
+            <p>The image shows the facade of a traditional Ndebele house in South Africa. The house is adorned with a vibrant, colorful, and intricate mural-like design featuring geometric patterns, shapes, and symbols in a variety of bold colors like blue, red, yellow, and green. The thatched roof adds to the authentic, cultural aesthetic of the building. This artistic and visually striking house facade showcases the rich cultural heritage and decorative traditions of the Ndebele people.</p>
+          </div>
+          <div class="category-tag">Architecture</div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+          <img
+            src="/assets/landscapes/openfield - landscape.jpg"
+            alt="Landscape 1"
+          /><h2>Serenity of the Savannah</h2>
+          <div class="overlay">
+            
+            <p>This image captures a vast, open savanna landscape under a clear sky, with scattered clouds lit by the warm hues of a setting or rising sun. In the foreground, a lone acacia tree stands prominently, symbolizing the resilience of life in the African plains. The golden grasses stretch into the distance, with a few other trees and small shrubs dotting the horizon. Rolling hills and mountain ranges lie in the background, creating a sense of depth and vastness. The scene is peaceful and expansive, evoking the natural beauty and solitude of the African wilderness.</p>
+          </div>
+          <div class="category-tag">Landscapes</div>
+        </div>
+
+        <div class="gallery-item" data-category="portraits">
+          <img
+            src="/assets/portraits/images - portraits.jpg"
+            alt="Portrait 1"
+          />
+          <h2>Girl with a Pearl Earring</h2>
+          <div class="overlay">
+            <p>
+              Girl with a Pearl Earring is an oil painting by Dutch Golden Age
+              painter Johannes Vermeer, dated c. 1665. Going by various names
+              over the centuries, it became known by its present title towards
+              the end of the 20th century because of the earring worn by the
+              girl portrayed there.
+            </p>
+          </div>
+          <div class="category-tag">Portraits</div>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+          <img
+            src="/assets/architecture/Wave like - Architecture.jpg"
+            alt="Architecture 1"
+          /><h2>Bosjes Chapel, Wellington</h2>
+          <div class="overlay">
+            
+            <p>Located within a vineyard, the chapel mimics its surroundings with its curved roof which symbolizes the resilience of the nation and the beauty of its nature. Its design paints a picture of a modern, innovative building with a striking roof design characterized by waves or undulations and featuring significant glazing elements accented by a central crucifix-like structure.</p>
+          </div>
+          <div class="category-tag">Architecture</div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+          <img src="/assets/landscapes/zebra-landscape.jpg" alt="Landscape 1" /><h2>Landscape 1</h2>
+          <div class="overlay">
+            
+            <p>This captivating image features a herd of zebras grazing peacefully on a sunlit savanna as the sun sets in the background. The golden light bathes the grasslands in a warm, vibrant glow, creating a striking contrast with the dark silhouettes of the zebras. The sky is painted with shades of fiery orange and deep red, with scattered clouds adding depth and drama to the scene. The peacefulness of the zebras against the intense colors of the sunset embodies the tranquil beauty of African wildlife at dusk.</p>
+          </div>
+          <div class="category-tag">Landscapes</div>
+        </div>
+
+        <div class="gallery-item" data-category="portraits">
+          <img
+            src="/assets/portraits/jesus-old-photos12_1 - portraits.webp"
+            alt="Portrait 1"
+          />
+          <h2>Traditional Jesus Painting</h2>
+          <div class="overlay">
+            <p>
+              The conventional image of a fully bearded Jesus with long hair
+              emerged around AD 300, but did not become established until the
+              6th century in Eastern Christianity, and much later in the West
+            </p>
+          </div>
+          <div class="category-tag">Portraits</div>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+          <img
+            src="/assets/architecture/side building greens - Architecture.jpg"
+            alt="Architecture 1"
+          /><h2>The Fynbos, Cape Town</h2>
+          <div class="overlay">
+            
+            <p>The building, which is being built in Bree Street, was designed by architects TwentyEightZeroTwo. It will house 689 apartments, a roof terrace with lap pool, co-working spaces, a fitness centre, a plant-based restaurant, a tearoom and botanical bar.</p>
+          </div>
+          <div class="category-tag">Architecture</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
