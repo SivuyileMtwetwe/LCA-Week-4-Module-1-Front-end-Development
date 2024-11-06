@@ -19,43 +19,45 @@
         </div>
     </nav>
 
-    <form method="post" action="https://formspree.io/f/xpwzpzrd">
-      
-        <!-- Input field for first name -->
-        <label for="first-name"
-          >First Name:
-          <input type="text" name="first_name" placeholder="Enter your name..." />
+    <form action="https://formspree.io/f/mjkvyyyj" method="post"> <!-- Form submits data to Formspree for processing -->
+          
+        <!-- Label and input for user's full name -->
+        <label>
+          Enter your Name:
+          <input type="text" name="fullname" placeholder="John Doe" />
         </label>
-        
-        <!-- Input field for last name -->
-        <label for="last-name"
-          >Last Name:
-          <input type="text" name="last_name" placeholder="Enter your surname name..." />
+
+        <!-- Label and input for user's email address -->
+        <label>
+          Enter your Email:
+          <input type="email" name="email" placeholder="johndoe@email.com" />
         </label>
-  
-        <!-- Dropdown menu for selecting gender -->
-        <label for="gender"
-          >Gender:
-          <select name="gender">
-            <option>Male</option>
-            <option>Female</option>
+
+        <!-- Label and input for user's phone number -->
+        <label>
+          Enter your Phone Number:
+          <input type="number" name="phoneNumber" placeholder="081 234 5748" />
+        </label>
+
+        <!-- Label and dropdown for selecting a subject -->
+        <label>
+          Select subject:<br>
+          <select name="subject">
+            <option value="english">English</option>
+            <option value="isixhosa">IsiXhosa</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="geography">Geography</option>
           </select>
         </label>
-  
-        <!-- Input field for date of birth -->
-        <label for="date"
-          >Date Of Birth:
-          <input type="date" name="date_of_birth" />
+
+        <!-- Label and textarea for user's message -->
+        <label>
+          Enter your message:<br>
+          <textarea name="message" placeholder="Message..."></textarea>
         </label>
-  
-        <!-- Input field for email address -->
-        <label for="email"
-          >Email Address:
-          <input type="email" name="email" placeholder="Enter your email with @" />
-        </label>
-  
-        <!-- Submit button to send form data -->
+
+        <!-- Submit button for form submission -->
         <input type="submit" />
       </form>
-</body>
+    </section>
 </html>
