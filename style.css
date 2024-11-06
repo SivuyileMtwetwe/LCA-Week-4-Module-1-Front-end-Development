@@ -179,7 +179,7 @@
   }
   
   /* Show only landscape items */
-  #filter-landscapes:checked ~ .product .product-item[data-category="landscapes"] {
+  #filter-landscapes:checked ~ .product .product-item[data-category="clothing"] {
     display: block;
   }
   
