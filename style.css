@@ -154,3 +154,42 @@
   .card:hover {
     transform: translateY(15px);
   }
+
+  input[type="radio"]{
+    display: none;
+  }
+
+  /* Styling for filter buttons */
+  .filter-gallery-container label {
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin: 5px;
+  }
+  
+  /* Hide all gallery items initially */
+  .gallery-item {
+    display: none;
+  }
+  
+  /* Show all items when "All" is selected */
+  #filter-all:checked ~ .gallery .gallery-item {
+    display: block;
+  }
+  
+  /* Show only landscape items */
+  #filter-landscapes:checked ~ .gallery .gallery-item[data-category="landscapes"] {
+    display: block;
+  }
+  
+  /* Show only portrait items */
+  #filter-portraits:checked ~ .gallery .gallery-item[data-category="portraits"] {
+    display: block;
+  }
+  
+  /* Show only architecture items */
+  #filter-architecture:checked ~ .gallery .gallery-item[data-category="architecture"] {
+    display: block;
+  }
+  
