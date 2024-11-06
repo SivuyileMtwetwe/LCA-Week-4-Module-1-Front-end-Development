@@ -155,10 +155,10 @@
     transform: translateY(15px);
   }
 
-  input[type="radio"]{
+  input[type="radio"] {
     display: none;
   }
-
+  
   /* Styling for filter buttons */
   .filter-gallery-container label {
     cursor: pointer;
@@ -174,22 +174,22 @@
   }
   
   /* Show all items when "All" is selected */
-  #filter-all:checked ~ .product .product-item {
+  #filter-all:checked ~ .products .product-item {
     display: block;
   }
   
-  /* Show only landscape items */
-  #filter-landscapes:checked ~ .product .product-item[data-category="clothing"] {
+  /* Show only clothing items */
+  #filter-clothing:checked ~ .products .product-item[data-category="clothing"] {
     display: block;
   }
   
-  /* Show only portrait items */
-  #filter-portraits:checked ~ .product .product-item[data-category="portraits"] {
+  /* Show only jewelry items */
+  #filter-jewelry:checked ~ .products .product-item[data-category="jewelry"] {
     display: block;
   }
   
-  /* Show only architecture items */
-  #filter-architecture:checked ~ .product .product-item[data-category="architecture"] {
+  /* Show only electronics items */
+  #filter-electronics:checked ~ .products .product-item[data-category="electronics"] {
     display: block;
   }
-  
+
