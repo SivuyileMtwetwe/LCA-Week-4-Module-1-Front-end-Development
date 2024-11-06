@@ -19,6 +19,43 @@
         </div>
     </nav>
 
-
+    <form method="post" action="https://formspree.io/f/xpwzpzrd">
+      
+        <!-- Input field for first name -->
+        <label for="first-name"
+          >First Name:
+          <input type="text" name="first_name" placeholder="Enter your name..." />
+        </label>
+        
+        <!-- Input field for last name -->
+        <label for="last-name"
+          >Last Name:
+          <input type="text" name="last_name" placeholder="Enter your surname name..." />
+        </label>
+  
+        <!-- Dropdown menu for selecting gender -->
+        <label for="gender"
+          >Gender:
+          <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </label>
+  
+        <!-- Input field for date of birth -->
+        <label for="date"
+          >Date Of Birth:
+          <input type="date" name="date_of_birth" />
+        </label>
+  
+        <!-- Input field for email address -->
+        <label for="email"
+          >Email Address:
+          <input type="email" name="email" placeholder="Enter your email with @" />
+        </label>
+  
+        <!-- Submit button to send form data -->
+        <input type="submit" />
+      </form>
 </body>
 </html>
