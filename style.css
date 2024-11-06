@@ -193,3 +193,41 @@
     display: block;
   }
 
+/* Style for all input fields */
+input {
+    width: 100%;               /* Make input fields full width */
+    padding: 12px;              /* Add padding for better spacing */
+    border: 1px solid #ddd;     /* Light gray border */
+    border-radius: 4px;         /* Rounded corners for a softer look */
+}
+
+/* Style for label elements */
+label {
+    display: block;             /* Block display for labels to stack vertically */
+    margin-bottom: 8px;         /* Add space below labels */
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    background-color: #2196F3;  /* Blue background for the submit button */
+    color: white;               /* White text color */
+    padding: 12px 24px;         /* Padding for larger clickable area */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: limegreen;    /* Change background color on hover */
+    box-shadow: 6px 6px 10px #0e0303, -6px -6px 10px #fcfbfb00; /* Add shadow effect on hover */
+}/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;          /* Add padding to the container */
+    }
+    
+    input,
+    select,
+    textarea {
+        padding: 10px;          /* Adjust padding for form elements */
+    }
+    
+}
