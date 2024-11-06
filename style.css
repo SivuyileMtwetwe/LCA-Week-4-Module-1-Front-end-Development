@@ -71,7 +71,7 @@
     font-size: 2em;
   }
   
-  /* Main Content and Card Layout */
+  /* Main Content and product-item Layout */
   main {
     display: flex;
     flex-wrap: wrap;
@@ -81,8 +81,8 @@
     justify-content: center;
   }
   
-  /* Card Style */
-  .card {
+  /* product-item Style */
+  .product-item {
     width: 100%;
     max-width: 300px;
     border: 1px solid #ddd;
@@ -92,7 +92,7 @@
     transition: transform 0.3s ease;
   }
   
-  .card img {
+  .product-item img {
     width: 100%;
     height: auto;
   }
@@ -102,17 +102,17 @@
     text-align: center;
   }
   
-  .card h2 {
+  .product-item h2 {
     font-size: 18px;
     margin: 10px 0;
   }
   
-  .card h3 {
+  .product-item h3 {
     color: #888;
     font-size: 16px;
   }
   
-  .card button {
+  .product-item button {
     background-color: #4CAF50
     ;
     color: white;
@@ -123,26 +123,26 @@
     transition: background-color 0.3s;
   }
   
-  .card button:hover {
+  .product-item button:hover {
     background-color: #073209
     ;
   }
   
   /* Responsive Layout */
   @media (min-width: 769px) {
-    .card {
-      flex: 1 1 calc(33.33% - 20px); /* Three cards per row with 20px gap */
+    .product-item {
+      flex: 1 1 calc(33.33% - 20px); /* Three product-items per row with 20px gap */
     }
   }
   
   @media (max-width: 768px) {
-    .card {
+    .product-item {
       flex: 1 1 calc(50% - 20px); 
     }
   }
   
   @media (max-width: 480px) {
-    .card {
+    .product-item {
       flex: 1 1 100%;
     }
   }
@@ -151,7 +151,7 @@
   
   
   
-  .card:hover {
+  .product-item:hover {
     transform: translateY(15px);
   }
 
@@ -169,27 +169,27 @@
   }
   
   /* Hide all gallery items initially */
-  .gallery-item {
+  .product-item {
     display: none;
   }
   
   /* Show all items when "All" is selected */
-  #filter-all:checked ~ .gallery .gallery-item {
+  #filter-all:checked ~ .product .product-item {
     display: block;
   }
   
   /* Show only landscape items */
-  #filter-landscapes:checked ~ .gallery .gallery-item[data-category="landscapes"] {
+  #filter-landscapes:checked ~ .product .product-item[data-category="landscapes"] {
     display: block;
   }
   
   /* Show only portrait items */
-  #filter-portraits:checked ~ .gallery .gallery-item[data-category="portraits"] {
+  #filter-portraits:checked ~ .product .product-item[data-category="portraits"] {
     display: block;
   }
   
   /* Show only architecture items */
-  #filter-architecture:checked ~ .gallery .gallery-item[data-category="architecture"] {
+  #filter-architecture:checked ~ .product .product-item[data-category="architecture"] {
     display: block;
   }
   
