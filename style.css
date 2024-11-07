@@ -333,12 +333,67 @@ input[type="submit"]:hover {
   100% {
     opacity: 0;
     visibility: hidden;
-  }
+  } 
 }
 
 /* Hide loader after animation */
 @media (prefers-reduced-motion: no-preference) {
   .loader-wrapper {
-    animation: fadeOut 0.5s ease-out 5s forwards;
+    animation: fadeOut 0.5s ease-out 1.5s forwards;
   }
+}
+
+#logo{
+  border-radius: 50%;
+  width: 50px;
+}
+/* Base button styles */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: initialPulse 1.5s infinite;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* One-time pulsating animation */
+@keyframes initialPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+  }
+  
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0.2);
+  }
+  
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+/* Optional: Add a focus state for accessibility */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
 }
