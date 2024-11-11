@@ -2,9 +2,7 @@ const number1 = 7;
 
 const number2 = 9;
 
-let num1String = String(number1);
-
-
+let num1String = toString(number1);
 
 let sum = number1 + number2;
 
