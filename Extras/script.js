@@ -1,4 +1,4 @@
-let myString = "LifeChoices"
+// let myString = "LifeChoices"
 
 // console.log(myString.length);
 
@@ -28,7 +28,7 @@ let myString = "LifeChoices"
 // console.log("Go do your homework!")
 // }
 
-let num = 5
+// let num = 5
 // if ( num % 2 == 0){
 // console.log("You have an EVEN number")
 // }else{
@@ -43,33 +43,54 @@ let num = 5
 // }
 
 
-let phy = 71
-let eng = 55 
-let mat = 56
+// let phy = 71
+// let eng = 55 
+// let mat = 56
 
 
 
-let average = (phy+eng+mat)/3
-// let average = 75
+// let average = (phy+eng+mat)/3
+// // let average = 75
 
-if(average>= 80 && average<=100){
-    grade = "A"
-    message = "Well done!!!"
-}else if (average >=70 && average<=79){
-    grade = "B"
-    message = "Well done!!!"
+// if(average>= 80 && average<=100){
+//     grade = "A"
+//     message = "Well done!!!"
+// }else if (average >=70 && average<=79){
+//     grade = "B"
+//     message = "Well done!!!"
 
-}else if(average >=60 && average <=69){
-    grade = "C" 
-    message = "Well done!!!"
+// }else if(average >=60 && average <=69){
+//     grade = "C" 
+//     message = "Well done!!!"
 
-}else if (average >=50 && average<=59){
-    grade = "D"
-    message = "Well done!!!"
+// }else if (average >=50 && average<=59){
+//     grade = "D"
+//     message = "Well done!!!"
 
-}else{
-    grade = "F"
-    message = "Unfortunately you need to work harder."
-}
+// }else{
+//     grade = "F"
+//     message = "Unfortunately you need to work harder."
+// }
 
-console.log(`${message} You got ${grade} for your grade.`)
+// console.log(`${message} You got ${grade} for your grade.`)
+
+// let value = 3
+// switch (value){
+//     case 1:
+//         console.log("It is sunny");
+//         break;
+//     case 2:
+//         console.log("It is cloudy");
+//         break;
+//     case 3:
+//         console.log("It is raining");
+//         break;
+//     default:
+//         console.log("Couldn't read the value");
+//         break;
+// }
+
+
+let studAtLC = false
+
+console.log(studAtLC == true? "They are a student at LCA": "They are not a student at LCA" )
