@@ -72,7 +72,7 @@
 //     message = "Unfortunately you need to work harder."
 // }
 
-// console.log(`${message} You got ${grade} for your grade.`)
+// console.log(`${message} You got ${grade} for your grade.`) 
 
 // let value = 3
 // switch (value){
@@ -91,6 +91,43 @@
 // }
 
 
-let studAtLC = false
+// let studAtLC = false
 
-console.log(studAtLC == true? "They are a student at LCA": "They are not a student at LCA" )
+// console.log(studAtLC == true? "They are a student at LCA": "They are not a student at LCA" )
+
+
+// let w = 1
+
+// while(w<=5){
+//     console.log("Mtwetwe");
+
+//     w++
+// }
+
+// do{
+//     console.log("Sivuyile");
+
+//     w++
+// }while(w<=5)
+
+
+// let arr = [ "Siya", "Usi", "Ilona", "Zen", "Av", "Lithemba", "Esona"];
+
+// for (let i = 0 ; i<arr.length ;i++){
+//     console.log(arr[i]);
+// }
+
+// for (let i of arr ){
+//     console.log(i);
+// }
+
+// for(let i in arr){
+//     console.log(arr[i]);
+// }
+
+
+let x ="Sivuyile";
+let y = 7
+
+
+console.log(typeof y.toString);
