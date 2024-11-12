@@ -8,3 +8,4 @@ if(score>=passingGrade){
 }else{
     console.log("Failed");
 }
+
