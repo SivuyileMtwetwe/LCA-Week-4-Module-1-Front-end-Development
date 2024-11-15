@@ -47,7 +47,6 @@ function funkyMath(a,b,c,d){
 let arr = [1, 2 , 33, 45, 6,44]
 let oddArr = []
 for (let i = 0; i<arr.length;i++){
-    console.log(arr[i]);
 
     if(arr[i]%2 !=0){
         oddArr.push(arr[i])
@@ -55,8 +54,16 @@ for (let i = 0; i<arr.length;i++){
 
     
 }
-function arrange(){
-    
-}
+console.log(oddArr);
+
+oddArr.reverse()
 
 console.log(oddArr);
+oddArr.sort()
+
+console.log(oddArr);
+
+
+let me ={
+    
+}
