@@ -36,7 +36,7 @@ function countVowels(word){
     return numberOfVowels
 }
 
-console.log(countVowels("ABracaDabra"));
+console.log(countVowels("PnEuMoNoUlTrAmIcRoScOpIcSiLiCoVoLcAnOcOnIoSiS"));
 
 
 function isPrime(number){
