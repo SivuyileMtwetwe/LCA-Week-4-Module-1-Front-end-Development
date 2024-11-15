@@ -50,3 +50,18 @@ function isPrime(number){
 }
 
 console.log(isPrime(5));
+
+function isPrime(number) {
+    if ((number % number == 0) && (number / 1 == number) && (number != 1) && (number == 2 || number == 3 || (number % 2 != 0 && number % 3 != 0))) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Check numbers between 0 and 100
+for (let i = 0; i <= 100; i++) {
+    if (isPrime(i)) {
+        console.log(i); // Print prime numbers
+    }
+}
