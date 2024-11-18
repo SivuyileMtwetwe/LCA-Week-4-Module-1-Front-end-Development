@@ -56,9 +56,9 @@ names: {
 
 
     lastName: "Johnson",
- fullname: ()=>{
-   console.log(this.firstName  +  this.nickName + this.lastName); 
-},
+//  fullname (){
+//    return this.names.firstName + " " +  this.names.nickName+ " " + this.lastName; 
+// },
 age: 28,
 gender: "female",
 hair: {
@@ -67,4 +67,4 @@ hair: {
 }
 }
 
-console.log(user.fullname());
+console.log(user);
