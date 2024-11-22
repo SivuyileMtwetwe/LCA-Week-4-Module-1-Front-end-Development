@@ -1,0 +1,34 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Smith",
+        "email": "john.smith@email.com",
+        "registrationDate": "2024-01-15"
+      },
+      {
+        "id": 2,
+        "name": "Sarah Johnson",
+        "email": "sarah.j@email.com",
+        "registrationDate": "2024-02-03"
+      },
+      {
+        "id": 3,
+        "name": "Michael Chen",
+        "email": "m.chen@email.com",
+        "registrationDate": "2024-02-28"
+      },
+      {
+        "id": 4,
+        "name": "Emily Davis",
+        "email": "emily.davis@email.com",
+        "registrationDate": "2024-03-12"
+      },
+      {
+        "id": 5,
+        "name": "Robert Wilson",
+        "email": "rob.wilson@email.com",
+        "registrationDate": "2024-03-25"
+      }
+    ]
+  }
