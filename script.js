@@ -37,11 +37,12 @@ resetButton.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
     const halloweenSound = document.getElementById('halloweenSound');
+
     
     
     const playSound = () => {
         halloweenSound.currentTime = 0;
-        
+        Swal.fire("Enable Sound for a better experience");
        
         const playPromise = halloweenSound.play();
         
