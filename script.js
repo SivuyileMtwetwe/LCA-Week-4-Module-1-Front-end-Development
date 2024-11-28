@@ -2,7 +2,7 @@ const spellArea = document.getElementById('spellArea');
 const generateButton = document.getElementById('generateButton');
 const resetButton = document.getElementById('resetButton');
 const ingredientsList = document.getElementById('ingredientsList');
-const halloweenSound = document.getElementById('halloweenSound').play()
+const halloweenSound = document.getElementById('halloweenSound')
 const evilLaugh = document.getElementById('evilLaugh')
 
 generateButton.addEventListener('click', () => {
@@ -33,4 +33,39 @@ generateButton.addEventListener('click', () => {
 
 resetButton.addEventListener('click', () => {
     spellArea.textContent = '';
+});
+
+window.addEventListener('load', () => {
+    const halloweenSound = document.getElementById('halloweenSound');
+    
+    
+    const playSound = () => {
+        halloweenSound.currentTime = 0;
+        
+       
+        const playPromise = halloweenSound.play();
+        
+        
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                
+                console.log('Sound played on load');
+            }).catch((error) => {
+                
+                console.warn('Autoplay blocked:', error);
+                
+                
+                const enableSound = () => {
+                    halloweenSound.play();
+                    
+                    document.removeEventListener('click', enableSound);
+                };
+                
+                document.addEventListener('click', enableSound);
+            });
+        }
+    };
+
+    
+    playSound();
 });
