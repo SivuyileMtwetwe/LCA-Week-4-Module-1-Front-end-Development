@@ -1,12 +1,36 @@
 const spellArea = document.getElementById('spellArea');
 const generateButton = document.getElementById('generateButton');
-const ingredientsList = document.getElementById('ingredientsList').getElementsByTagName("li")
-// const ingredientsList = document
+const resetButton = document.getElementById('resetButton');
+const ingredientsList = document.getElementById('ingredientsList');
+const halloweenSound = document.getElementById('halloweenSound').play()
+const evilLaugh = document.getElementById('evilLaugh')
+
+generateButton.addEventListener('click', () => {
+    
+    function countdown(callback) {
+        let count = 3;
+        const countdownInterval = setInterval(() => {
+            if (count > 0) {
+                spellArea.textContent = count;
+                count--;
+            } else {
+                clearInterval(countdownInterval);
+                callback();
+            }
+        }, 1000);
+    }
+    countdown(() => {
+        const ingredients = ingredientsList.getElementsByTagName('li');
+        const randomIngredient = ingredients[Math.floor(Math.random() * ingredients.length)].textContent; 
+        const randomColor = `hsl(${Math.random() * 360}, 50%, 70%)`;
+        
+        spellArea.textContent = `Spell: ${randomIngredient}!`;
+        spellArea.style.backgroundColor = randomColor;
+
+    });
+});
 
 
-
-
-console.log(ingredientsList);
-generateButton.addEventListener("click",() =>{
-   spellArea.innerHTML= [Math.floor(Math.random() * ingredients.length)].textContent;
-})
+resetButton.addEventListener('click', () => {
+    spellArea.textContent = '';
+});

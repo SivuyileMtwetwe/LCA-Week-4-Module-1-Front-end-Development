@@ -1,3 +1,41 @@
-/* #ingredientsList{
-    display: none
-} */
+#ingredientsList {
+  display: none;
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  background-image: url(./assets/cartoon-trick-or-treat-halloween-animation-video.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  flex-direction: column;
+}
+h1{
+    margin-bottom: 20px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+#spellArea{
+    color: black;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.eater-regular {
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white
+}
